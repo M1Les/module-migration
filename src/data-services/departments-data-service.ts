@@ -1,4 +1,4 @@
-export module AQ.DataServices {
+module AQ.DataServices {
     "use strict";
 
     export class DepartmentsDataService {
