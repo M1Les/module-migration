@@ -1,9 +1,8 @@
-module AQ.DataServices {
-    "use strict";
-
-    export class UsersDataService {
-        getUsers() {
-            return [{name: 'user'}];
-        }
+export default class UsersDataService {
+    getUsers() {
+        let auth = new AQ.Services.AuthenticationService({begin: ()=>{console.log('Calling from modularized code')}});
+        console.log(auth);
+        auth.login();
+        return [{name: 'user'}];
     }
 }

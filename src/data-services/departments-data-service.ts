@@ -1,9 +1,5 @@
-module AQ.DataServices {
-    "use strict";
-
-    export class DepartmentsDataService {
-        getDepartments() {
-            return [{name: 'department'}];
-        }
+export default class DepartmentsDataService {
+    getDepartments() {
+        return [{name: 'department'}];
     }
 }
